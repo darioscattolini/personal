@@ -25,6 +25,7 @@ html {
     --section-bottom-padding: 2rem;
     --nav-height: 3.6rem;
     --mobile-menu-height: 40vh;
+    --mobile-menu-item-height: calc(var(--mobile-menu-height) / 5);
     --headings-height: 5rem;
     --headings-top-padding: 2rem;
     --headings-border-bottom: 2px;
@@ -177,27 +178,36 @@ nav ul li:hover a:active {
     nav {
         flex-grow: unset;
         height: 100%;
+        width: 100%;
         display: flex;
         align-items: center;
     }
 
     nav i {
-        display: inline-block!important;
+        display: block!important;
+        text-align: center;
+        width: 100%;
+        font-size: calc(0.5 * var(--nav-height));
     }
 
     nav ul {
         height: var(--mobile-menu-height);
         position: fixed;
         left: 0;
-        bottom: var(--nav-height);
+        bottom: calc(-1 * var(--mobile-menu-height));
         width: 100vw;
         flex-direction: column;
         justify-content: flex-start;
         background-color: var(--almost-black);
+        transition: bottom 0.7s;
+    }
+
+    .menu-transition-end {
+        bottom: var(--nav-height);
     }
     
     nav ul li {
-        --mobile-menu-item-height: calc(var(--mobile-menu-height) / 5);
+        
         height: var(--mobile-menu-item-height);
         line-height: var(--mobile-menu-item-height);
         font-size: calc(var(--mobile-menu-item-height) * 0.4);
@@ -206,25 +216,8 @@ nav ul li:hover a:active {
         flex-shrink: 1;
         text-align: center;
     }
-    nav ul li:hover {
-        background-color: var(--dark-gray);
-        padding: unset;
-    }
     nav ul li:active {
-        font-size: 0.9em;
-    }
-    
-    nav ul li a, 
-    nav ul li a:visited {
-        text-decoration: none;
-        color: var(--almost-white);
-    }
-    nav ul li:hover a,
-    nav ul li:hover a:link,
-    nav ul li:hover a:visited,
-    nav ul li:hover a:hover,
-    nav ul li:hover a:active {
-        color: var(--interaction-red);
+        font-size: calc(var(--mobile-menu-item-height) * 0.35);
     }
 }
 
