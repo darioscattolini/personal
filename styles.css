@@ -82,7 +82,7 @@ body>header {
     height: var(--nav-height);
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 20;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -183,11 +183,24 @@ nav ul li:hover a:active {
         align-items: center;
     }
 
+    nav::before {       /* Needed to make menu shift BEHIND navbar */
+        content: "";
+        width: 100vw;
+        height: 100%;
+        position: absolute;
+        background-color: var(--almost-black);
+        z-index: -1;
+    }
+
     nav i {
         display: block!important;
         text-align: center;
         width: 100%;
         font-size: calc(0.5 * var(--nav-height));
+    }
+    nav i:hover {
+        cursor: pointer;
+        color: var(--interaction-red);
     }
 
     nav ul {
@@ -200,6 +213,7 @@ nav ul li:hover a:active {
         justify-content: flex-start;
         background-color: var(--almost-black);
         transition: bottom 0.7s;
+        z-index: -2;
     }
 
     .menu-transition-end {
@@ -207,7 +221,6 @@ nav ul li:hover a:active {
     }
     
     nav ul li {
-        
         height: var(--mobile-menu-item-height);
         line-height: var(--mobile-menu-item-height);
         font-size: calc(var(--mobile-menu-item-height) * 0.4);
@@ -236,14 +249,14 @@ footer {
 
 .portfolio>header,
 .resume>header,
-.about>header {
+.about>header,
+footer h1 {
     height: var(--headings-height);
     line-height: calc(var(--headings-height) - var(--headings-border-bottom) - var(--headings-top-padding));
-    padding: var(--headings-top-padding) var(--page-side-padding) 0;
     position: sticky;
     top: calc(var(--nav-height) - var(--headings-top-padding));
-    z-index: 1;
-    background-color: var(--dark-gray);
+    z-index: 10;
+    padding-top: var(--headings-top-padding);
 }
 
 .portfolio>header h1,
@@ -252,6 +265,14 @@ footer {
 footer h1 {
     font-size: 1.75rem;
     font-weight: 700;
+}
+
+.portfolio>header,
+.resume>header,
+.about>header {
+    padding-left: var(--page-side-padding);
+    padding-right: var(--page-side-padding);
+    background-color: var(--dark-gray);
 }
 
 .portfolio>.padding,
@@ -266,6 +287,20 @@ footer {
 footer h2 {
     margin-top: 4vh;
     margin-bottom: 2vh;
+}
+
+@media (max-width: 568px) {
+    .anchor {
+        position: absolute;
+        top: calc(-1 * var(--nav-height) + var(--headings-top-padding));
+    }
+    
+    .portfolio>header,
+    .resume>header,
+    .about>header,
+    footer h1 {
+        top: calc(-1 * var(--headings-top-padding));
+    }    
 }
 
 /* Home
@@ -416,7 +451,28 @@ footer h2 {
 
 }
 
-/* en mobile portrait cambiar layout líquido a grilla de una columna */
+@media (max-width: 414px) {
+    .project-container {
+        display: block;
+        grid-template-columns: unset;
+        column-gap: unset;
+        row-gap: unset;
+        justify-items: unset;
+    }
+
+    .project-background {
+        font-size: 18px;
+        margin: 20px auto;
+    }
+    
+    .project-info h2 {
+        font-size: 20.5px;
+    }
+    
+    .project-info ul {
+        font-size: 15.5px;
+    }
+}
 
 /* Resume
 ---------------------------------*/
@@ -496,14 +552,8 @@ footer {
 }
     
 footer h1 {
-    height: var(--headings-height);
-    line-height: calc(var(--headings-height) - var(--headings-border-bottom) - var(--headings-top-padding));
-    padding-top: var(--headings-top-padding);
     text-align: center;
     border-bottom: var(--headings-border-bottom) solid;
-    position: sticky;
-    top: calc(var(--nav-height) - var(--headings-top-padding));
-    z-index: 1;
     background-color: var(--footer-green);
 }
 
@@ -678,5 +728,11 @@ footer .license {
 
     address div p:last-child {
         line-height: 1.3em;
+    }
+}
+
+@media(max-width: 580px) {
+    footer .license {
+        padding-bottom: var(--nav-height);
     }
 }

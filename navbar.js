@@ -15,5 +15,4 @@ window.onclick = () => {
         navMenu.classList.remove("menu-transition-end");
         visible = false;
     }
-    
 };
