@@ -152,6 +152,10 @@ nav ul li:hover a:active {
 }
 
 @media (max-width: 568px) {
+    html {
+        --nav-height: 52px;
+    }
+
     body>header {
         width: 100vw;
         position: fixed;
@@ -222,7 +226,6 @@ nav ul li:hover a:active {
     nav ul li:hover a:active {
         color: var(--interaction-red);
     }
-
 }
 
 /* SHARED SECTION STYLES
