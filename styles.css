@@ -27,7 +27,7 @@ html {
     --interaction-red: #FF6F59;
     --main-font-family: 'Mukta Mahee', sans-serif;
 
-    font-size: calc(15px + 0.227vw);
+    font-size: calc(16.4px + 0.194vw);  /* ranges from 17px (at 320px width) to 19px (1350px) */
 }
 
 @media (max-width: 768px) {
