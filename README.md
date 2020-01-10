@@ -12,6 +12,7 @@ This is my personal web page. I keep it simple: in a single page it displays my 
 
 ## Status
 _in progress_
+* Still needs pic of myself for homepage
 * My life still goes on.
 
 ## Play
