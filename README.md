@@ -15,7 +15,7 @@ _in progress_
 * Still needs pic of myself for homepage
 * My life still goes on.
 
-## Play
+## Access the deployed version
 This is the link to the deployed version: [https://darioscattolini.github.io/personal](https://darioscattolini.github.io/personal)
 
 ## Inspiration
