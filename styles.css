@@ -622,17 +622,6 @@ footer form button:active {
     outline: none;
 }
 
-    /* Styles overriding Kwes form styling */
-.help.is-danger-110293 {
-    margin: -1rem 0 0 0!important;
-    color: var(--interaction-red)!important;
-    font-size: 0.8em!important;
-    text-align: right!important;
-}
-.kw-credit {
-    float: right;
-}
-
 footer address {
     padding: 2%;
     font-style: normal;
@@ -726,4 +715,18 @@ footer .license {
     footer .license {
         padding-bottom: var(--nav-height);
     }
+}
+
+/* Contact form redirection page
+---------------------------------*/
+.redirection {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.redirection p {
+    font-size: 1.7em;
 }

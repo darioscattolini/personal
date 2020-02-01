@@ -386,17 +386,17 @@
         <div class="columns">
             <div class="contact-message">
                 <h2>Leave me a message</h2>
-                <div class="kwes-form">
-                    <form method="POST" action="https://kwes.io/api/foreign/forms/65OXWcBf97F2KEOMm5Yl">
-                        <label for="name">Your Name</label>
-                        <input type="text" name="name">
-                        <label for="email">Your Email</label>
-                        <input type="email" name="email" required>
-                        <label for="message">Your Message</label>
-                        <textarea name="message" required></textarea>
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
+                <form method="POST" action="https://formsubmit.io/send/85c8820d-6619-4b4f-846f-e23320fe1399">
+                    <input name="_redirect" type="hidden" value="https://darioscattolini.github.io/personal/contact-form-redirection.html">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name">
+                    <label for="email">Your Email</label>
+                    <input type="email" name="email" required>
+                    <label for="message">Your Message</label>
+                    <textarea name="message" required></textarea>
+                    <input name="_formsubmit_id" type="text" style="display:none">
+                    <button type="submit">Submit</button>
+                </form>
             </div>
             <address>
                 <h2>Where I can be found</h2>
@@ -426,10 +426,7 @@
         <p class="license">Copyright 2019 by Darío Scattolini</p>
     </footer>
 
-    <script src="navbar.js"></script>
-
-    <script src="https://kwes.io/js/kwes.js"></script>
-    
+    <script src="navbar.js"></script>    
 </body>
 
 </html>
