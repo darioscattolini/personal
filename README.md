@@ -8,12 +8,11 @@ This is my personal web page. I keep it simple: in a single page it displays my 
 * HTML
 * CSS
 * JavaScript (kept to the minimum, just to control mobile navigation menu transitions)
-* [Kwes](https://kwes.io/) service for form sending
+* [Formsubmit](http://formsubmit.io/) service for the backend of the contact form
 
 ## Status
 _in progress_
-* Still needs pic of myself for homepage
-* My life still goes on.
+* Life still goes on!
 
 ## Access the deployed version
 This is the link to the deployed version: [https://darioscattolini.github.io/personal](https://darioscattolini.github.io/personal)
