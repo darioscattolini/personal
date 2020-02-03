@@ -262,6 +262,7 @@ footer h1 {
     background-color: var(--dark-gray);
 }
 
+.home>.padding,
 .portfolio>.padding,
 .resume>.padding,
 .about>.padding,
@@ -284,15 +285,8 @@ footer h2 {
 
 @media (max-width: 568px) {
     html {
-        --headings-height: var(--nav-height);
+        --headings-height: calc(var(--nav-height) + var(--headings-top-padding));
         --page-side-padding: 6vw;
-    }
-
-    .portfolio>header,
-    .resume>header,
-    .about>header,
-    footer h1 {
-        padding-top: 0;
     }
 
     .portfolio>header h1,
@@ -301,7 +295,7 @@ footer h2 {
     footer h1 {
         width: 100%;
         height: 100%;
-        line-height: var(--headings-height);
+        line-height: calc(var(--headings-height) - var(--headings-top-padding));
     }
 
     .anchor {
@@ -312,7 +306,7 @@ footer h2 {
     .resume>header,
     .about>header,
     footer h1 {
-        top: 0;
+        top: calc(-1 * var(--headings-top-padding));
     }    
 }
 
@@ -332,7 +326,7 @@ footer h2 {
     background-image: url(img/home-background.gif);
     background-repeat: no-repeat;
     background-size: auto 100%;
-    background-position-y: 100%;
+    background-position-y: 90%;
 }
 
 .home {
