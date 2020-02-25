@@ -528,6 +528,18 @@ html {
     margin-top: 1rem;
 }
 
+.resume .technologies {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 15px;
+}
+
+@media (max-width: 360px) {
+    .resume .technologies {
+        display: block;
+    }    
+}
+
 .resume .period-company {
     text-align: right;
     font-style: italic;
