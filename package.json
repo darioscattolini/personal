@@ -1,0 +1,29 @@
+{
+  "name": "dario-scattolini",
+  "version": "1.0.0",
+  "description": "Darío Scattolini's personal website",
+  "main": "index.html",
+  "dependencies": {
+    "browserify": "^16.5.2",
+    "fancy-log": "^1.3.3",
+    "gulp": "^4.0.2",
+    "tsify": "^5.0.2",
+    "typescript": "^4.0.2",
+    "vinyl-source-stream": "^2.0.0",
+    "watchify": "^3.11.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darioscattolini/personal.git"
+  },
+  "author": "Darío Scattolini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darioscattolini/personal/issues"
+  },
+  "homepage": "https://github.com/darioscattolini/personal#readme"
+}

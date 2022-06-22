@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darío Scattolini | Front-end developer</title>
+  <meta name="description" content="Darío Scattolini | Front-end developer based in Barcelona.">
+    
+  <meta prefix="og: http://ogp.me/ns#" property="og:title" content="Darío Scattolini | Front-end developer" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:type" content="website" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://darioscattolini.github.io/personal/img/my-personal-website-opengraph.png" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:url" content="https://darioscattolini.github.io/personal" />
+  <meta prefix="og: http://ogp.me/ns#" property="og:description" content="I'm Darío Scattolini, a front-end developer based in Barcelona." />
+    
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack-subset.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="newstyles.css">
+  <script src="https://kit.fontawesome.com/d6262197ed.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="home-page-container" id="home">
+    <article class="home-page">
+      <header id="home-header">
+        <h1>Darío Scattolini</h1>
+        <h2>Front-end developer</h2>
+      </header>
+  
+      <div id="home-content" class="home-animation-end">
+        <p>
+          Hi! I'm Darío Scattolini and I'm 31 years old. I was born in Argentina 
+          and currently live in Barcelona.
+        </p>
+    
+        <p>
+          I'm a junior web developer (and philosopher!) with a focus on the 
+          front-end side of the JavaScript technology stack.
+        </p>
+        
+        <p>
+          Thank you for visiting my website! Here you can find out more about my 
+          background, my skills and my work.
+        </p>
+    
+        <p>
+          Feel free to contact me about anything I can be helpful with!
+        </p>
+      </div>
+    </article>
+  </div>
+
+  <nav class="home-animation-end">
+    <div class="nav-content">
+      <i class="fas fa-bars"></i>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#about">About Me</a></li>
+        <!-- NOT YET: writings -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-container" id="portfolio">
+    <article class="page">
+      <header>
+        <h1>Project: <span id="project-title"></span></h1>
+      </header>
+      <img id="project-img">
+      <dl>
+        <dt>Description:</dt><dd id="project-description"></dd>
+        <dt>Date of development:</dt><dd id="project-date"></dd>
+        <dt>Technologies employed:</dt><dd id="project-technologies"></dd>
+      </dl>
+      <div class="portfolio-links">
+        <a id="project-source">Go to source code</a>
+        <a id="project-deployed">Go to deployed version</a>
+      </div>
+      <nav>
+        <button>Previous project</button>
+        <button>Next project</button>
+      </nav>
+      <footer>
+        <p>
+          Check out <a href="https://www.github.com/darioscattolini" 
+          target="_blank">my GitHub page</a> for projects not included here.
+        </p>
+      </footer>
+    </article>
+  </div>
+
+  <div class="page-container" id="resume">
+    <article class="page">Lalala</article>
+  </div>
+
+  <div class="page-container" id="about">
+    <article class="page">Lalala</article>
+  </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>

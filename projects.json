@@ -1,0 +1,11 @@
+[
+  {
+    "title": "Rock, Paper, Scissors!",
+    "img": "./img/rock-paper-scissors.png",
+    "description": "First JavaScript app I developed, when I had enough with core JS kata excercises and started working on DOM manipulation and event handling. It's a simple Rock, Paper, Scissors game against the computer.",
+    "date": "September 2019 (release), October 2020 (update)",
+    "technologies": "HTML, CSS, JavaScript",
+    "source": "https://github.com/darioscattolini/rockpaperscissors",
+    "deployed": "https://darioscattolini.github.io/rockpaperscissors"
+  }
+]
